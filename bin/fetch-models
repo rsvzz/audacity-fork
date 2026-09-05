@@ -141,6 +141,8 @@ Downloading Music Separation models from Hugging Face. Please be patient!
   silent git clone https://huggingface.co/Intel/demucs-openvino "${SEPARATION_TMP}"
   cd "${SEPARATION_TMP}"
   silent git checkout 97fc578fb57650045d40b00bc84c7d156be77547
+  silent git lfs install
+  silent git lfs pull
   mkdir -p "${SEPARATION}"
   cp "${SEPARATION_TMP}/htdemucs_v4."{bin,xml} "${SEPARATION}"
   rm -rf "${SEPARATION_TMP}"

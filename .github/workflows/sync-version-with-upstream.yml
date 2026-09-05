@@ -2,8 +2,10 @@ name: Update
 
 on:
   # Runs at 10:00 UTC every day
-  schedule:
-    - cron:  '0 10 * * *'
+  # Disable until 4.0.0 is reliable
+  # See https://github.com/snapcrafters/audacity/issues/91
+  #schedule:
+  #  - cron:  '0 10 * * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
